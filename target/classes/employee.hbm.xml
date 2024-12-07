@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.klef.jfsd_exam.Project" table="projects">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="string" column="name"/>
+        <property name="duration" type="int" column="duration"/>
+        <property name="budget" type="double" column="budget"/>
+        <property name="manager" type="string" column="manager"/>
+    </class>
+</hibernate-mapping>
